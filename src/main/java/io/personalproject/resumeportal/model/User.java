@@ -3,8 +3,8 @@ package io.personalproject.resumeportal.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="Student")
-public class Student {
+@Table(name="User")
+public class User {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
@@ -16,7 +16,7 @@ public class Student {
 
 
 
-    public Student(int id, String userName, String password, boolean active, String roles) {
+    public User(int id, String userName, String password, boolean active, String roles) {
         this.id = id;
         this.userName = userName;
         this.password = password;
@@ -24,7 +24,7 @@ public class Student {
         this.roles = roles;
     }
 
-    public Student() {
+    public User() {
     }
 
     public int getId() {
